@@ -1,0 +1,43 @@
+/* StudentTerms.css */
+
+.student-terms {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+}
+
+.navbar {
+  background-color: #9F9D9D;
+  color: #fff;
+  padding: 25px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row-reverse; /* Reverse the order of flex items */
+}
+
+.sidebar {
+  background-color: #CBCBCB;
+  width: 200px;
+  height: 700px;
+  padding: 20px;
+}
+
+.content {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.term-list {
+  list-style: none;
+  padding: 0;
+}
+
+.term-item {
+  background-color: #F2F2F2;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+}

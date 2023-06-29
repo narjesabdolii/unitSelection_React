@@ -10,7 +10,8 @@
 .navbar {
   background-color: #9F9D9D;
   color: #fff;
-  padding: 25px;
+  padding: 10px;
+  height: 60px;
 }
 
 .container {
@@ -40,4 +41,41 @@
   color: #fff;
   padding: 10px;
   margin-bottom: 10px;
+}
+
+
+
+.term-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.term-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.term-button {
+  flex-basis: calc(50% - 5px);
+  background-color: lightgray;
+  color: black;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.logout-button {
+  background-color: #9F9D9D;
+  color: white;
+  margin-top: 20px;
+}
+
+.showList-button {
+  background-color: #CBCBCB;
+  color: black;
+  margin-left: 0px;
+  margin-top: 2px;
+
 }

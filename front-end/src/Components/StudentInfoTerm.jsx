@@ -1,7 +1,9 @@
 import React from 'react';
 import './StudentInfoTerm.css';
 
+  
 const StudentInfoTerm = () => {
+
   const studentInfoTerm = [
     'مشاهده لیست دروس ارائه شده برای پیش ثبت نام',
     'مشاهده پیش ثبت نام ها',

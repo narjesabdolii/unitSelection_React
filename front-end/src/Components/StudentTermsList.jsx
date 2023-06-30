@@ -1,8 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './StudentTerms.css';
 
 const StudentTerms = () => {
   const studentTerms = ['Term 1', 'Term 2', 'Term 3', 'Term 4', 'Term 5', 'Term 6', 'Term 7', 'Term 8'];
+  const navigate = useNavigate();
+
+  const handleTermClick = (term) => {
+    navigate(`/StudentInfoTerm/${term}`);
+  };
 
   const [showButtonList, setShowButtonList] = React.useState(false);
 
@@ -23,12 +29,16 @@ const StudentTerms = () => {
             <div className="term-buttons">
               <div className="term-buttons-row">
                 {studentTerms.slice(0, 4).map((term, index) => (
-                  <button key={index} className="term-button">{term}</button>
+                  <button key={index} className="term-button" onClick={() => handleTermClick(index +1)}>
+                    {term}
+                  </button>
                 ))}
               </div>
               <div className="term-buttons-row">
                 {studentTerms.slice(4, 8).map((term, index) => (
-                  <button key={index} className="term-button">{term}</button>
+                  <button key={index} className="term-button" onClick={() => handleTermClick(index +1)}>
+                    {term}
+                  </button>
                 ))}
               </div>
             </div>

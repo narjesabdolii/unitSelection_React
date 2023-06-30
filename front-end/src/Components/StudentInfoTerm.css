@@ -1,0 +1,74 @@
+.studentInfo-terms {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  }
+  
+  .navbar {
+    background-color: #9F9D9D;
+    color: #fff;
+    padding: 10px;
+    height: 60px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row-reverse; /* Reverse the order of flex items */
+    padding-left: 20px;
+  }
+  
+  .logout-button {
+    background-color: #9F9D9D;
+    color: white;
+    margin-top: 20px;
+  }
+  
+  .sidebar {
+    background-color: #CBCBCB;
+    width: 150px;
+    height: 700px;
+    padding: 20px;
+  }
+  
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 200px;
+  }
+  
+ 
+
+
+  .term-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 100px;
+  }
+  
+  .button-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .term-button {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    margin-right: 100px; /* تغییر فاصله بین دکمه‌های یک سطر */
+    background-color: #F2F2F2;
+    color: black;
+    
+  }
+
+  
+  .circle {
+  
+    background-color: black;
+    border-radius: 50%;
+  }

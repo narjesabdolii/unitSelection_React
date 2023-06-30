@@ -1,12 +1,12 @@
 import React from 'react';
 import LoginForm from './Components/LoginForm';
 import './LoginForm.css';
-import StudentTerms from './Components/StudentTermsList';
+import StudentInfoTerm from './Components/StudentInfoTerm';
 
 const App = () => {
   return (
     <div className="app">
-      <StudentTerms />
+      <StudentInfoTerm />
     </div>
   );
 };

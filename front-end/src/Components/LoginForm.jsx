@@ -1,31 +1,19 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
+
 
 const LoginForm = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Send login request to the backend API
-    const response = await fetch('http://localhost:3000/api/login', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ username, password }),
-    });
-
-    if (response.ok) {
-      // Login successful, handle the response or redirect to another page
-      alert('Login successful');
-    } else {
-      // Login failed, handle the error
-     alert('Login failed');
-     console.log(console.err);
-     console.log("failed");
-     console.log(response)
-    }
+    alert('Login successful');
+    navigate('/StudentTermsList');
+    
   };
 
   return (

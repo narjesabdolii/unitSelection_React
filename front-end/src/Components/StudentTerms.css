@@ -21,7 +21,7 @@
 
 .sidebar {
   background-color: #CBCBCB;
-  width: 200px;
+  width: 150px;
   height: 700px;
   padding: 20px;
 }
@@ -75,7 +75,8 @@
 .showList-button {
   background-color: #CBCBCB;
   color: black;
-  margin-left: 0px;
+  margin-right: 0px;
   margin-top: 2px;
+  margin-left: 1px;
 
 }

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
-
+import axios from 'axios';
 
 const LoginForm = () => {
   const [username, setUsername] = useState('');
@@ -11,9 +10,25 @@ const LoginForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    alert('Login successful');
-    navigate('/StudentTermsList');
-    
+    try {
+      const response = await axios.post('http://localhost:5000/api/login', {
+        username,
+        password,
+      });
+
+      console.log(response.data);
+      // Assuming the response contains a success flag or token indicating successful login
+      if (response.data.success) {
+        alert('Login successful');
+        navigate('/StudentTermsList');
+      } else {
+        alert('Login failed');
+
+      }
+    } catch (error) {
+      console.error('Login failed:', error);
+      alert('Login failed');
+    }
   };
 
   return (
